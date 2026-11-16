@@ -1,62 +1,77 @@
-# MASTER-INDEX-REP: A Comprehensive Algorithmic Framework
+# MASTER-INDEX-REP
 
-## Project Overview
-MASTER-INDEX-REP is an academic-grade repository designed to serve as a definitive reference for fundamental algorithms in computer science. This project provides rigorous implementations of 20 essential algorithms across four primary categories, executed in three major programming paradigms: TypeScript (Strongly Typed/Web), Python (Dynamic/Scripting), and C++ (System/Performance).
+Twenty fundamental computer-science algorithms, each implemented in **TypeScript**, **Python** and **C++** — 60 clean, documented, standalone reference implementations with complexity analysis.
 
-The objective of this repository is to demonstrate algorithmic mastery, code cleanliness, and cross-language proficiency. Each implementation is optimized for clarity, efficiency, and adherence to industry best practices.
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Algorithms](https://img.shields.io/badge/Algorithms-20-0E75B6?style=flat-square)
 
-## Core Categories
-The repository is structured into four distinct algorithmic domains:
+> Want to see them run? The interactive visualizer and simulation lab lives in **[THE HUB — MASTER-INDEX](https://github.com/aaas72/MASTER-INDEX)** ([live demo](https://aaas72.github.io/MASTER-INDEX/)).
 
-1. **Sorting Algorithms**: Techniques for organizing data efficiently.
-2. **Searching Algorithms**: Methods for data retrieval within structured and unstructured sets.
-3. **Graph Theory**: Implementations of pathfinding and connectivity algorithms.
-4. **Dynamic Programming & Mathematics**: Optimization problems and mathematical foundations.
+## Algorithm Index
 
-## Technology Stack and Implementation Philosophy
+| Category | Algorithm | TypeScript | Python | C++ |
+|---|---|---|---|---|
+| **Sorting** | Quick Sort | [TS](TypeScript/Sorting/QuickSort.ts) | [Python](Python/Sorting/QuickSort.py) | [C++](CPP/Sorting/QuickSort.cpp) |
+|  | Merge Sort | [TS](TypeScript/Sorting/MergeSort.ts) | [Python](Python/Sorting/MergeSort.py) | [C++](CPP/Sorting/MergeSort.cpp) |
+|  | Bubble Sort | [TS](TypeScript/Sorting/BubbleSort.ts) | [Python](Python/Sorting/BubbleSort.py) | [C++](CPP/Sorting/BubbleSort.cpp) |
+|  | Insertion Sort | [TS](TypeScript/Sorting/InsertionSort.ts) | [Python](Python/Sorting/InsertionSort.py) | [C++](CPP/Sorting/InsertionSort.cpp) |
+|  | Heap Sort | [TS](TypeScript/Sorting/HeapSort.ts) | [Python](Python/Sorting/HeapSort.py) | [C++](CPP/Sorting/HeapSort.cpp) |
+| **Searching** | Binary Search | [TS](TypeScript/Searching/BinarySearch.ts) | [Python](Python/Searching/BinarySearch.py) | [C++](CPP/Searching/BinarySearch.cpp) |
+|  | Linear Search | [TS](TypeScript/Searching/LinearSearch.ts) | [Python](Python/Searching/LinearSearch.py) | [C++](CPP/Searching/LinearSearch.cpp) |
+|  | Jump Search | [TS](TypeScript/Searching/JumpSearch.ts) | [Python](Python/Searching/JumpSearch.py) | [C++](CPP/Searching/JumpSearch.cpp) |
+|  | Interpolation Search | [TS](TypeScript/Searching/InterpolationSearch.ts) | [Python](Python/Searching/InterpolationSearch.py) | [C++](CPP/Searching/InterpolationSearch.cpp) |
+|  | Exponential Search | [TS](TypeScript/Searching/ExponentialSearch.ts) | [Python](Python/Searching/ExponentialSearch.py) | [C++](CPP/Searching/ExponentialSearch.cpp) |
+| **Graphs** | Dijkstra | [TS](TypeScript/Graphs/Dijkstra.ts) | [Python](Python/Graphs/Dijkstra.py) | [C++](CPP/Graphs/Dijkstra.cpp) |
+|  | Breadth-First Search | [TS](TypeScript/Graphs/BFS.ts) | [Python](Python/Graphs/BFS.py) | [C++](CPP/Graphs/BFS.cpp) |
+|  | Depth-First Search | [TS](TypeScript/Graphs/DFS.ts) | [Python](Python/Graphs/DFS.py) | [C++](CPP/Graphs/DFS.cpp) |
+|  | Bellman-Ford | [TS](TypeScript/Graphs/BellmanFord.ts) | [Python](Python/Graphs/BellmanFord.py) | [C++](CPP/Graphs/BellmanFord.cpp) |
+|  | Floyd-Warshall | [TS](TypeScript/Graphs/FloydWarshall.ts) | [Python](Python/Graphs/FloydWarshall.py) | [C++](CPP/Graphs/FloydWarshall.cpp) |
+| **DP & Math** | Fibonacci (DP) | [TS](TypeScript/DP_Math/Fibonacci.ts) | [Python](Python/DP_Math/Fibonacci.py) | [C++](CPP/DP_Math/Fibonacci.cpp) |
+|  | 0/1 Knapsack | [TS](TypeScript/DP_Math/Knapsack.ts) | [Python](Python/DP_Math/Knapsack.py) | [C++](CPP/DP_Math/Knapsack.cpp) |
+|  | Longest Common Subsequence | [TS](TypeScript/DP_Math/LCS.ts) | [Python](Python/DP_Math/LCS.py) | [C++](CPP/DP_Math/LCS.cpp) |
+|  | Prim's MST | [TS](TypeScript/DP_Math/PrimAlgorithm.ts) | [Python](Python/DP_Math/PrimAlgorithm.py) | [C++](CPP/DP_Math/PrimAlgorithm.cpp) |
+|  | Sieve of Eratosthenes | [TS](TypeScript/DP_Math/Sieve.ts) | [Python](Python/DP_Math/Sieve.py) | [C++](CPP/DP_Math/Sieve.cpp) |
 
-### TypeScript
-- **Paradigm**: Object-Oriented / Functional.
-- **Philosophy**: Utilizing Generics and Interfaces to ensure type safety and reusability. Focus on modern ECMAScript standards.
+Best, average and worst-case time complexity plus space complexity for every algorithm are summarized in **[Complexity.md](Complexity.md)**.
 
-### Python
-- **Paradigm**: Procedural / Functional.
-- **Philosophy**: Emphasizing "Pythonic" code—clean, readable, and efficient usage of standard library features and list comprehensions.
+## Design Principles
 
-### C++
-- **Paradigm**: System-Level / Resource-Efficient.
-- **Philosophy**: Leveraging the Standard Template Library (STL) and focusing on memory management and execution speed.
+| Language | Style | Focus |
+|---|---|---|
+| TypeScript | Functional, strongly typed | Generics and interfaces for type-safe, reusable code |
+| Python | Pythonic, procedural | Readability and idiomatic use of the standard library |
+| C++ | Systems-level | STL containers, memory efficiency and execution speed |
 
-## Repository Structure
-The repository is organized by language to facilitate easy navigation for developers specializing in specific ecosystems:
+Every file is self-contained and documents its time and space complexity, so it can be read, copied or run on its own.
 
-```text
-/TypeScript
-   /Sorting
-   /Searching
-   /Graphs
-   /DP_Math
-/Python
-   /Sorting
-   /Searching
-   /Graphs
-   /DP_Math
-/CPP
-   /Sorting
-   /Searching
-   /Graphs
-   /DP_Math
+## Running an Implementation
+
+```bash
+# TypeScript (Node.js 20+)
+npx tsx TypeScript/Sorting/QuickSort.ts
+
+# Python 3
+python Python/Graphs/Dijkstra.py
+
+# C++ (C++17)
+g++ -std=c++17 CPP/DP_Math/Knapsack.cpp -o knapsack && ./knapsack
 ```
 
-## Documentation and Complexity
-Each algorithm file includes detailed documentation regarding its:
-- **Time Complexity**: Analysis of Best, Average, and Worst-case scenarios (Big O notation).
-- **Space Complexity**: Assessment of memory overhead during execution.
+C++ files include a runnable `main()` demo; TypeScript and Python files end with a commented example usage block — uncomment it to see output.
 
-For a comparative overview, refer to the `Complexity.md` file located in the root directory.
+## Repository Structure
 
-## Getting Started
-To explore the implementations, navigate to the folder of your preferred language. Each source file is standalone and can be executed with its respective runtime (Node.js, Python 3.x, or a C++ compiler like G++).
+```text
+TypeScript/ · Python/ · CPP/
+   ├── Sorting/
+   ├── Searching/
+   ├── Graphs/
+   └── DP_Math/
+Complexity.md
+```
 
----
-*Developed as a contribution to the global developer community.*
+## Author
+
+**Abdellah Sheikh** — [abdellahsheikh.dev](https://abdellahsheikh.dev) · [LinkedIn](https://www.linkedin.com/in/abdellahsheikh)
